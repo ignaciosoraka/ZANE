@@ -1,0 +1,746 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,400;1,500;1,600&display=swap');
+
+* {
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #2c2939;
+    background: linear-gradient(180deg,
+            rgba(37, 34, 63, 1) 0%,
+            rgba(31, 61, 98, 1) 50%,
+            rgba(35, 40, 72, 1) 100%),
+        radial-gradient(ellipse,
+            /* Puedes ajustar la forma de las manchas cambiando 'ellipse' u otra forma */
+            rgba(37, 34, 63, 0.3) 10%,
+            /* Color de la mancha con transparencia */
+            rgba(31, 61, 98, 0.3) 100%,
+            /* Color de la mancha con transparencia */
+            rgba(35, 40, 72, 0.3) 100%
+            /* Color de la mancha con transparencia */
+        ),
+        radial-gradient(ellipse,
+            /* Puedes ajustar la forma de las manchas cambiando 'ellipse' u otra forma */
+            rgba(37, 34, 63, 0.3) 20%,
+            /* Color de la mancha con transparencia */
+            rgba(31, 61, 98, 0.3) 40%,
+            /* Color de la mancha con transparencia */
+            rgba(35, 40, 72, 0.3) 60%
+            /* Color de la mancha con transparencia */
+        ),
+        radial-gradient(ellipse,
+            /* Puedes ajustar la forma de las manchas cambiando 'ellipse' u otra forma */
+            rgba(37, 34, 63, 0.3) 100%,
+            /* Color de la mancha con transparencia */
+            rgba(31, 61, 98, 0.8) 10%,
+            /* Color de la mancha con transparencia */
+            rgba(35, 40, 72, 1) 80%
+            /* Color de la mancha con transparencia */
+        );
+
+    margin: 0;
+    padding: 0;
+}
+
+/*
+   background:linear-gradient(
+        180deg,
+        rgba(37,34,63,1) 0%,
+        rgba(31,61,98,1) 50%,
+        rgba(35,40,72,1) 100%
+    );
+*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #12121c;
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 200px 0px 120px 0px;
+
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+
+
+
+    justify-content: space-between;
+}
+
+.logo img {
+    max-width: 80px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    text-decoration: none;
+}
+
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+    line-height: 60px;
+    z-index: 999;
+}
+
+.menu .navbar ul li a {
+
+    font-size: 15px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    display: block;
+
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu .navbar ul li a:hover {
+    color: #687CEF;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-txt {
+    text-align: center;
+    padding: 0 150px;
+
+
+}
+
+.header-txt h1 {
+    font-size: 45px;
+    line-height: 1;
+    color: #fdfeff;
+    margin-bottom: 25px;
+
+}
+
+span {
+    color: #687CEF;
+}
+
+p {
+    font-size: 20px;
+    color: #d2d2d2;
+    margin-bottom: 35px;
+}
+
+.butons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 10px 25px;
+    background: linear-gradient(90deg,
+            rgba(37, 118, 250, 1) 0%,
+            rgba(84, 115, 237, 1)100%);
+    color: #fdfeff;
+    margin: 0 15px;
+    border-radius: 5px;
+}
+
+.btn-1:hover {
+    color: #000000;
+
+}
+
+/*parte de informacion*/
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    padding: 1 100px;
+    margin-top: -70px;
+}
+
+.infomation-1 {
+    margin: 0 10px;
+    background: linear-gradient(90deg,
+            rgba(84, 105, 210, 1)0%,
+            rgba(35, 43, 88, 1)68%);
+    padding: 15px;
+    border-radius: 15px;
+
+}
+
+.infomation-1 h3 {
+    color: #fdfeff;
+    font-size: 18px;
+}
+
+.infomation-1 p {
+    margin-bottom: 5px;
+}
+
+.infomation-1 a {
+    color: #fdfeff;
+}
+
+.infomation-1:hover {
+    cursor: pointer;
+    background: linear-gradient(90deg,
+            rgba(37, 118, 250, 1) 0%,
+            rgba(84, 115, 237, 1)100%);
+}
+
+.about {
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+}
+
+.about-img {
+    flex-basis: 50%;
+}
+
+.about-img img {
+    width: 450px;
+    border-radius: 15px;
+}
+
+.about-txt {
+    flex-basis: 50%;
+}
+
+h2 {
+    font-size: 40px;
+    color: #fdfeff;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.about-txt a {
+    margin: 0;
+}
+
+.intro {
+    color: #687CEF;
+    font-size: 15px;
+}
+
+.services {
+    padding: 0 0 120px 0;
+    text-align: center;
+}
+
+.services-content {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+}
+
+.services-1 {
+    background-color: #1e202d;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.services-1:hover {
+    background: linear-gradient(90deg,
+            rgba(37, 118, 250, 1) 0%,
+            rgba(84, 115, 237, 1)100%);
+    cursor: pointer;
+}
+
+.services-1 img {
+    width: 30px;
+    margin-bottom: 10px;
+}
+
+.services-1 h3 {
+    color: #fdfeff;
+    margin-bottom: 15px;
+}
+
+/*parte de precios*/
+
+.price {
+    padding: 0 0 120px 0;
+    text-align: center;
+}
+
+.price-content {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.price-1 {
+    flex-basis: calc(27.7% - 20px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 35px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.pack {
+    color: #fdfeff;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.price-1 h3 {
+    color: #fdfeff;
+    font-size: 70px;
+
+}
+
+.bg-pack {
+    background: linear-gradient(90deg,
+            rgba(37, 118, 250, 1) 0%,
+            rgba(84, 115, 237, 1)100%);
+
+}
+
+
+
+.pack-center {
+    color: #fdfeff;
+}
+
+
+.price-1 li {
+    color: #fdfeff;
+    margin-bottom: 15px;
+}
+
+/*contacto*/
+
+.contact {
+    display: flex;
+
+    justify-content: center;
+}
+
+.form-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+
+
+}
+
+.form-container h2 {
+    display: flex;
+    text-align: center;
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    font-size: 18px;
+    color: #949fbd;
+    margin-bottom: 50px;
+}
+
+form {
+    padding: 50px;
+    background: linear-gradient(180deg,
+            rgba(43, 54, 108, 1) 0%,
+            rgba(43, 73, 125, 1) 50%,
+            rgba(40, 90, 140, 1) 100%);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 800px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin-bottom: 40px;
+}
+
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #f5fcff;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+input,
+textarea {
+    padding: 20px 15px;
+    background-color: #283b64;
+    border: 0;
+    outline: none;
+    border-radius: 25px;
+    color: #f5fcff;
+    font-size: 16px;
+}
+
+
+::placeholder {
+    color: #949fbd;
+    font-size: 16px;
+}
+
+textarea {
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 17px 15px;
+    width: 180px;
+    align-self: center;
+    text-transform: capitalize;
+    color: #f5fcff;
+    font-size: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    background: linear-gradient(90deg,
+            rgba(33, 41, 57, 1)0%,
+            rgba(108, 144, 252, 1)100%);
+}
+
+.btn:hover {
+    background: linear-gradient(90deg,
+            rgba(65, 31, 185, 1)0%,
+            rgba(44, 41, 57, 1))100%;
+}
+
+.success {
+    position: absolute;
+    top: 50px;
+    color: #25D366;
+    font-size: 18px;
+}
+
+.error {
+    position: absolute;
+    top: 50px;
+    color: red;
+    font-size: 18px;
+}
+
+
+/*footer*/
+
+/* Estilos para el footer épico */
+.epic-footer {
+    background-color: #12121c;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.left-column img {
+    width: 250px;
+    ;
+    /* Ajusta el tamaño del logo según tus necesidades */
+}
+
+.center-column ul,
+.right-column ul {
+    list-style: none;
+    /* Quita los marcadores de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.center-column li,
+.right-column li {
+    margin-bottom: 20px;
+    /* Espacio entre los elementos de lista */
+}
+
+.center-column a,
+.right-column a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 5px;
+    /* Espacio entre los enlaces de contacto */
+}
+
+
+/*boton de wsp*/
+
+
+
+
+
+@media(max-width:465px) {
+    .butons {
+        flex-direction: column;
+        padding: 0 50px;
+    }
+
+    .btn-1 {
+        margin: 0 0 20px 0;
+    }
+
+    .price {
+        padding: 30px;
+    }
+
+    .price-content {
+        flex-direction: column;
+    }
+
+    .about-img img {
+        width: 250px;
+    }
+
+    .price-1 {
+        margin-bottom: 30px;
+    }
+
+    .services {
+        padding: 0 30px 30px 30px;
+    }
+
+    .services-content {
+        margin-top: 30px;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+
+}
+
+@media(max-width:991px) {
+    .header {
+        min-height: 0vh;
+        padding: 80px 30px 50px 30px;
+    }
+
+    .header-txt {
+        padding: 0;
+    }
+
+    .header-txt h1 {
+        font-size: 45px;
+        padding-top: 50px;
+    }
+
+
+    .information {
+        margin-top: 0;
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .infomation-1 {
+        margin: 0 0 20px 0;
+
+    }
+
+    .about {
+        padding: 0 30px 30px;
+        flex-direction: column;
+    }
+
+    .about-txt {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .about-img {
+        order: 1;
+    }
+
+    /*contacto*/
+    .form {
+        width: 100%;
+    }
+
+    .form-group {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        margin-bottom: 10px;
+    }
+    
+    textarea{
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    /*footer*/
+
+
+    .footer {
+        padding: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link {
+        margin-bottom: 10px;
+    }
+
+
+}
+
+
+
+/*menu hamburguesa*/
+
+@media(max-width:654px) {
+    .content {
+        min-height: 125px;
+    }
+
+    .menu {
+        top: 0;
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        background-color: #b4c6fd;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+
+
+
+
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #151521;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .services {
+        padding: 0 30px 30px 30px;
+    }
+
+    .services-content {
+        margin-top: 30px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .epic-footer {
+        flex-direction: column;
+        /* Cambia la dirección de los elementos a columna */
+        text-align: center;
+        /* Centra el contenido en dispositivos móviles */
+    }
+
+    .left-column img {
+        width: 100px;
+        /* Ajusta el tamaño del logo según tus necesidades */
+    }
+
+
+    .left-column {
+        margin-bottom: 10px;
+        /* Espacio entre el logo y las columnas de texto */
+    }
+
+    .center-column ul,
+    .right-column ul {
+        text-align: center;
+        /* Centra los enlaces en dispositivos móviles */
+    }
+
+    .center-column li,
+    .right-column li {
+        margin-bottom: 5px;
+        /* Espacio entre los elementos de lista en dispositivos móviles */
+    }
+
+
+}
